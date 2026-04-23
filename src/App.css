@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Share+Tech+Mono&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0d1115;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+.mono-font {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* Base Team Colors */
+.team-red { background-color: #dc0000; color: white; }
+.team-papaya { background-color: #ff8700; color: black; }
+.team-teal { background-color: #00d2be; color: black; }
+.team-blue { background-color: #0600ef; color: white; }
+.team-green { background-color: #0090d0; color: white; }
+.team-pink { background-color: #f596c8; color: black; }
+.team-white { background-color: #ffffff; color: black; }
+
+/* Status Colors */
+.text-purple-fastest { color: #b138ff; }
+.text-green-pb { color: #00d05a; }
+.text-yellow-no { color: #fcd700; }
+
+.pill {
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.tyre {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  font-weight: bold;
+  font-size: 10px;
+}
+.tyre-s { border-color: #ff3333; color: #ff3333; }
+.tyre-m { border-color: #fcd700; color: #fcd700; }
+.tyre-h { border-color: #ffffff; color: #ffffff; }
+.tyre-w { border-color: #0077ff; color: #0077ff; }
+
+/* Dashboard Responsive Table Classes */
+.table-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 900px;
+}
+
+.table-header {
+  color: #6b7280;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 2px solid #2a313b;
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1.5fr 2fr 3fr 2.5fr 3.5fr 3.5fr 3.5fr;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid #1f252d;
+  font-size: 13px;
+  transition: background-color 0.1s;
+}
+
+.table-row:hover {
+  background-color: #1a2027;
+}
+
+.mini-sector-bar {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 3px;
+}
+
+.mini-sector {
+  height: 4px;
+  flex: 1;
+  background-color: #fcd700;
+  border-radius: 1px;
+  max-width: 8px;
+}
+.mini-sector.purple { background-color: #b138ff; }
+.mini-sector.green { background-color: #00d05a; }
+
+/* Track Map Path */
+.track-map-outline {
+  stroke: #ffffff;
+  stroke-width: 4;
+  fill: none;
+  opacity: 0.8;
+  stroke-linejoin: round;
+}
+
+.car-dot {
+  stroke: #fff;
+  stroke-width: 2px;
+  transition: all 0.2s linear;
+}
+
+/* Weather Dash Controls */
+.weather-card {
+  background: linear-gradient(145deg, #161c24 0%, #0d1115 100%);
+  border: 1px solid #1f252d;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border-radius: 12px;
+  padding: 24px;
+}
